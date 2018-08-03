@@ -1,0 +1,10 @@
+<ul>
+  <li>
+    Donar Links
+  <a [routerLink]="['/donar',1]">Donar -1 </a>
+  <a [routerLink]="['/donar',2]">Donar -2</a>
+  <a [routerLink]="['/donar',3]">Donar -3</a>
+</li>
+</ul>
+<p class="text-success">{{data}}</p>
+<input type="button" (click)="goTo()" value="GO To Past">

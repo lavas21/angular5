@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+</div>
+<ul>
+  <li>
+  <a [routerLink]="['/login']">Login</a>
+  <a [routerLink]="['/donar']">Donar</a>
+  <a [routerLink]="['/details']">Details</a>
+  <a [routerLink]="['/contact']">Contact</a>
+  <a [routerLink]="['/past']">Past</a>
+</li>
+</ul>
+
+<router-outlet></router-outlet>
