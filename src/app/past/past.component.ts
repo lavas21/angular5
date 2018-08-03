@@ -18,6 +18,5 @@ export class PastComponent implements OnInit {
       if(this.name != undefined)
       this.data = "Message "+this.name;          
     });
-
 }
 }

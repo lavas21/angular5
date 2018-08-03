@@ -8,7 +8,7 @@ import { PastComponent } from './past/past.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
-  {path:'login', component: LoginComponent,canActivate:[UniGuardService]},
+  {path:'login', component: LoginComponent},
   {path:'donar', component: DonarComponent,canActivate:[UniGuardService]},
   {path:'donar/:id', component: DonarComponent,canActivate:[UniGuardService]},
   {path:'details', component: DetailsComponent, canDeactivate:[UniGuardService]},

@@ -11,13 +11,18 @@ export class UniGuardService implements CanActivate, CanDeactivate<{}> {
   canActivate(route:ActivatedRouteSnapshot , state: RouterStateSnapshot): boolean{
     console.log(route);
     console.log(state.url);
+    if(sessionStorage.getItem('isLogin') == "Y")
+    return true;
+    else{
+      return false;
+    }
     /*if(state.url == "/donar"){
       console.log("You r in donar page");
       return true;
     }else{
       return false;
     }*/
-    return true;
+    //return true;
   }
 
   canDeactivate(comp: DetailsComponent, currentRoute: ActivatedRouteSnapshot, 

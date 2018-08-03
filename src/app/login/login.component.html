@@ -5,5 +5,5 @@
       <input type="{{each.type}}" name="{{each.name}}" formControlName= "{{each.name}}">
     </div>
   </ng-container>
-  <input type="submit" value="Login"/>
+  <input type="submit" value="Login" [disabled]="!loginForm.valid"/>
 </form>
