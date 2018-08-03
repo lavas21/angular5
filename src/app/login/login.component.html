@@ -3,6 +3,7 @@
     <div *ngFor="let each of frmConfig">
       <label>{{each.label}}</label>
       <input type="{{each.type}}" name="{{each.name}}" formControlName= "{{each.name}}">
+      <div style="color:red" *ngIf="!loginForm.controls[each.name].valid">{{each.name}} Required</div>
     </div>
   </ng-container>
   <input type="submit" value="Login" [disabled]="!loginForm.valid"/>
