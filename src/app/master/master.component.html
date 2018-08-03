@@ -1,0 +1,16 @@
+<p>
+  master works!
+</p>
+<input type="text" [(ngModel)]='name1'>
+<div *ngIf="show">
+  <app-student [name]="name1">
+    <h1>Hi! I'm master.</h1>
+    <table>
+      <tr>
+        <th>Check</th>
+        <th>name</th>
+      </tr>
+    </table>
+  </app-student>
+</div>
+<input type="button" value="modify" (click)="modify()">

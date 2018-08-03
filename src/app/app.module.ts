@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { DonarComponent } from './donar/donar.component';
 import { DetailsComponent } from './details/details.component';
 import { PastComponent } from './past/past.component';
+import { MasterComponent } from './master/master.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PastComponent } from './past/past.component';
     LoginComponent,
     DonarComponent,
     DetailsComponent,
-    PastComponent
+    PastComponent,
+    MasterComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +28,6 @@ import { PastComponent } from './past/past.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MasterComponent/*AppComponent*/]
 })
 export class AppModule { }
